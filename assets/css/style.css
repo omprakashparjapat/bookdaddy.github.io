@@ -1,0 +1,387 @@
+/*------------- font -------------------*/
+@font-face {
+    font-family: 'fu700';
+    src: url(../fonts/Futura-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'fc800';
+    src: url(../fonts/FuturaCondensedExtraBold.otf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'po800';
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'po500';
+    src: url(../fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'po400';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'po600';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
+/*------------- variable -------------------*/
+:root {
+    --green: #03FE0A;
+    --white: #fff;
+    --sec-text-color: #002570;
+    --black: #002570;
+}
+
+/*------------- base -------------------*/
+body {
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*------------- globale classes -------------------*/
+.btn-g {
+    border: none;
+    background-color: var(--green);
+    padding: 0.8rem 3rem;
+    border-radius: 50px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--black);
+    font-family: 'po600';
+    border: 0.1rem solid transparent;
+    transition: all 0.2s linear;
+}
+
+.sec-padding {
+    padding: 3.5rem 0;
+}
+
+/*-------------  -------------------*/
+
+
+/*------------- home -------------------*/
+.home {
+    padding: 5rem 0;
+    background: url(../images/home-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    padding: 1rem 0;
+    background-color: var(--white);
+}
+
+.header .logo {
+    width: 110px;
+    height: auto;
+}
+
+.header .btn-g:hover {
+    border: 0.1rem solid var(--green);
+    background-color: transparent;
+}
+
+.home .wrapper {
+    margin-top: 3rem;
+}
+
+.home .content span {
+    color: var(--white);
+    font-size: 3.5rem;
+    font-family: 'po400';
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.home .content h2 {
+    color: var(--white);
+    font-size: 5rem;
+    /* font-family: 'fu700'; */
+    text-transform: capitalize;
+    color: var(--white);
+    /* letter-spacing: 0.2rem; */
+    font-weight: 700;
+}
+
+.home .content h1 {
+    color: var(--green);
+    font-size: 7rem;
+    /* font-family: 'fu700'; */
+    text-transform: capitalize;
+    font-weight: 900 !important;
+    /* letter-spacing: 0.2rem; */
+}
+
+.content .btn-g {
+    padding-left: 5.8rem;
+    margin-top: 3rem;
+}
+
+.content .btn-g img {
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.home .image {
+    margin: 1rem;
+}
+
+/*------------- fingertips -------------------*/
+.fingertips {
+    background-color: var(--green);
+}
+
+.heading h1 {
+    font-size: 3rem;
+    color: var(--sec-text-color);
+    font-family: 'po400';
+}
+
+.heading h1 span {
+    font-size: 5rem;
+    font-family: inherit;
+}
+
+.fingertips .content.right {
+    text-align: right;
+}
+
+.fingertips .content h3 {
+    font-size: 2.4rem;
+    font-family: 'po600';
+    background-color: var(--sec-text-color);
+    color: var(--white);
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.fingertips .content.left h3 {
+    padding: 1.5rem 6rem 1.5rem 3rem;
+    clip-path: polygon(100% 0, 85% 100%, 1% 100%, 0 1%);
+
+}
+
+.fingertips .content.right h3 {
+    padding: 1.5rem 3rem 1.5rem 6rem;
+    clip-path: polygon(100% 0, 100% 100%, 11% 100%, 0 1%);
+
+}
+
+.fingertips .content p {
+    font-size: 2rem;
+    color: var(--sec-text-color);
+    font-family: 'po400';
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+/*------------- download section -------------------*/
+.download {
+    background: url(../images/download-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+.download .content h1 {
+    font-size: 6.2rem;
+    text-transform: uppercase;
+    color: var(--green);
+}
+.download .content ul {
+    margin-top: 5rem;
+}
+.download .content li {
+  font-size: 2.2rem;
+  font-family: 'po400';
+  color: var(--white);
+  position: relative;
+  padding-left: 4rem;
+  list-style: none;
+  margin-top: 2rem;
+}
+.download .content li span {
+position: absolute;
+content: '';
+width: 2.5rem;
+height: 2.5rem;
+background-color: var(--green);
+border-radius: 50%;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+}
+.download .content li a {
+    color: var(--green);
+}
+
+/*------------- download-btn section -------------------*/
+.download-btn {
+
+background: url(../images/footer-bg.png);
+}
+.download-btn .wrapper {
+position: relative;
+padding: 1rem 0 5rem;
+}
+.download-btn .wrapper::after {
+    position: absolute;
+    content: '';
+    background: url(../images/logo.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 15rem;
+    height: 10rem;
+    bottom: calc(0% - 5rem);
+    left: 0;
+}
+.download-btn .btn-g {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    padding: 1rem 5rem;
+    padding-left: 6.8rem;
+}
+
+.download-btn .btn-g img {
+    left: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/*------------- footer -------------------*/
+footer {
+    background-color: var(--sec-text-color);
+    padding: 3rem 0 2rem;
+    color: whitesmoke;
+}
+footer .title {
+    font-size: 3.5rem;
+    color: var(--white);
+    font-family: 'po600';
+} 
+footer .icon {
+    margin: 1.5rem;
+}
+footer .wrapper {
+    border-top: 0.01rem solid var(--white);
+    padding-top: 2rem;
+}
+footer .wrapper p,
+footer .wrapper li {
+font-size: 2rem;
+color: var(--white);
+font-family: 'po400';
+}
+footer .wrapper li {
+    list-style: none;
+    display: inline;
+    padding: 0 2rem;
+    text-align: center;
+}
+footer .wrapper li:last-child {
+    border-left: 0.2rem solid var(--white);
+}
+
+
+/*-------------  -------------------*/
+
+
+
+/*-------------  -------------------*/
+
+
+
+/*------------- responcive -------------------*/
+@media(max-width:991px) {
+    .home .content h1 {
+        font-size: 6rem;
+    }
+    .download .image {
+        margin: 2rem;
+    }
+
+}
+
+
+@media(max-width:767px) {
+    html {
+        font-size: 52%;
+    }
+
+    .home {
+        height: 100%;
+    }
+
+    .header .logo img {
+        height: 5rem;
+        width: auto;
+    }
+
+    .home .content {
+        padding-top: 5rem;
+
+    }
+    .download .image {
+        margin: 1rem 10rem;
+    }
+    .download-btn .wrapper {
+        position: relative;
+        padding: 1rem 0 8rem;
+    }
+    .download-btn .wrapper::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer .title {
+        margin-top: 2rem;
+    } 
+}
+
+@media(max-width:575px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home {
+        padding: 3rem 0;
+    }
+    .download .image {
+        margin: 2rem 3rem;
+    }
+   
+    footer .title {
+       font-size: 2.5rem;
+    } 
+}
